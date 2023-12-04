@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"fmt"
 	"os"
+	"strings"
 )
 
 func BuildInputFilepath(currentDayNumber int) string {
@@ -28,4 +29,15 @@ func ReadFileAndSplitLines(filepath string) [][]byte {
 	content := ReadFile(filepath)
 
 	return bytes.Split(content, []byte("\n"))
+}
+
+func ReadFileSplitLinesAndChars(filepath string) [][]rune {
+	content := ReadFile(filepath)
+
+	chars := [][]rune{}
+	for _, line := range strings.Split(string(content), "\n") {
+		chars = append(chars, []rune(line))
+	}
+
+	return chars
 }
