@@ -1,6 +1,5 @@
 package chapters
 
-
 import (
 	"slices"
 )
