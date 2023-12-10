@@ -69,7 +69,6 @@ func TestChapter1WithSampleInput(t *testing.T) {
 	// if err != nil {
 		// t.Fatalf(\"Could not get current working directory\")
 	// }
-	// }
 	// 
 	// inputFilepath := fmt.Sprintf(\"%s/../input.txt\", wd)
 	// data := utils.ReadFile(inputFilepath)
