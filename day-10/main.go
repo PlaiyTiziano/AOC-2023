@@ -16,6 +16,6 @@ func main() {
 	value := chapters.Chapter1(data)
 	fmt.Println("- Chapter 1:", value)
 
-	// value = chapters.Chapter2()
-	// fmt.Println("- Chapter 2:", value)
+	value = chapters.Chapter2(data)
+	fmt.Println("- Chapter 2:", value)
 }
